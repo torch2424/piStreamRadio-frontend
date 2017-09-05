@@ -1,8 +1,11 @@
 package main
 
 import "fmt"
-import "github.com/gin-gonic/gin"
 import "encoding/json"
+
+//3P libs
+import "github.com/gin-gonic/gin"
+import "github.com/Jeffail/gabs"
 import "github.com/aymerick/raymond"
 
 func main() {
@@ -17,10 +20,13 @@ func main() {
 			}
 		}`)
 
+		// Digest JSON in gabs to allow editing
+		jsonParsed, _ := gabs.ParseJSON(sampleJson)
+		jsonParsed.SetP("I changed the body! lmaooo ayyeee", "body");
 		// Unmarshal the json
 		// https://gobyexample.com/json
 		var jsonMarshal map[string]interface{}
-		err := json.Unmarshal(sampleJson, &jsonMarshal);
+		err := json.Unmarshal([]byte(jsonParsed.String()), &jsonMarshal);
 		if err != nil {
 			panic(err)
 		}
