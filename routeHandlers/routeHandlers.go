@@ -1,5 +1,6 @@
 package routeHandlers
 
+// Imports
 import "fmt"
 import "encoding/json"
 
@@ -8,9 +9,10 @@ import "github.com/gin-gonic/gin"
 import "github.com/Jeffail/gabs"
 import "github.com/aymerick/raymond"
 
+// Home The handler for the "/" route. Will simply explain the page and other routes
 func Home(c *gin.Context) {
   // Some sample json, TODO: need to read froma  file
-  sampleJson := []byte(`{
+  sampleJSON := []byte(`{
     "title": "test",
     "body": "ayyeee lmao",
     "deep": {
@@ -19,7 +21,7 @@ func Home(c *gin.Context) {
   }`)
 
   // Digest JSON in gabs to allow editing
-  jsonParsed, _ := gabs.ParseJSON(sampleJson)
+  jsonParsed, _ := gabs.ParseJSON(sampleJSON)
   jsonParsed.SetP("I changed the body! lmaooo ayyeee", "body");
   // Unmarshal the json
   // https://gobyexample.com/json
