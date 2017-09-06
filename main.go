@@ -15,11 +15,16 @@ func main() {
 	r := gin.Default()
 
 	// Register all of our partials with raymond
+	raymond.RegisterPartial("boilerplate-style", string(renderer.ReadFileAsByte("./templates/partials/boilerplate.style.html")))
+	raymond.RegisterPartial("style", string(renderer.ReadFileAsByte("./templates/partials/style.html")))
 	raymond.RegisterPartial("head", string(renderer.ReadFileAsByte("./templates/partials/head.html")))
 	raymond.RegisterPartial("footer", string(renderer.ReadFileAsByte("./templates/partials/footer.html")))
 
 	// Define our Routes
 	r.GET("/", routeHandlers.Home)
+	r.GET("/about", routeHandlers.About)
+	r.GET("/faq", routeHandlers.FAQ)
+	r.GET("/contact", routeHandlers.Contact)
 	r.GET("/playlist", routeHandlers.Playlist)
 
 	// TODO: Handle Password Hashing

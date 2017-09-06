@@ -1,3 +1,9 @@
 {
-  "title": "Contact"
+  "title": "Contact",
+  "description": "You can contact us for questions, problems, if you would like to be featured on the stream, or for a nice chat at the following links:",
+  "email": "test@test.com",
+  "twitterUsername": "piStreamRadio",
+  "instagramUsername": "piStreamRadio",
+  "facebookPageLink": "https://www.facebook.com/piStreamRadio/",
+  "youtubeChannelLink": "https://www.youtube.com/channel/UCLkeIxbDJ8-kH7B9qJkyxQg"
 }

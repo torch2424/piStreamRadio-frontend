@@ -1,0 +1,14 @@
+{{> head}}
+
+<!-- FAQ Page HTML Here -->
+<h1>{{title}}</h1>
+
+{{#each questions}}
+<div class="faq__question animated fadeInUp">
+  <h3>{{question}}</h3>
+  <hr>
+  <p>{{answer}}</p>
+</div>
+{{/each}}
+
+{{> footer}}

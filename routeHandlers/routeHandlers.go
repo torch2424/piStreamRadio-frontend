@@ -35,6 +35,13 @@ func About(c *gin.Context) {
     []byte(renderer.RenderFromPath("./templates/pages/about/about.html", "./templates/pages/about/about.json")))
 }
 
+// FAQ Handler for the "/faq" Route. Simply renders HTML and JSON
+func FAQ(c *gin.Context) {
+  // Return our html
+  c.Data(200, "text/html; charset=utf-8",
+    []byte(renderer.RenderFromPath("./templates/pages/faq/faq.html", "./templates/pages/faq/faq.json")))
+}
+
 // Contact Handler for the "/contact" Route. Simply renders HTML and JSON
 func Contact(c *gin.Context) {
   // Return our html

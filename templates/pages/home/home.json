@@ -1,4 +1,7 @@
 {
+  "amp-extensions": [
+    "amp-iframe"
+  ],
   "title": "piStreamRadio",
   "subtitle": "24/7 Open Source Radio",
   "description": "piStreamRadio, an open-source 24/7 live streaming raspberry pi."
