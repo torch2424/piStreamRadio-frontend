@@ -2,13 +2,21 @@ package main
 
 //Our libs
 import "./routeHandlers"
+import "./renderer"
 
 //3P libs
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/gin-gonic/gin"
+	"github.com/aymerick/raymond"
+)
 
 func main() {
 	// Create our Router with Gin
 	r := gin.Default()
+
+	// Register all of our partials with raymond
+	raymond.RegisterPartial("head", string(renderer.ReadFileAsByte("./templates/partials/head.html")))
+	raymond.RegisterPartial("footer", string(renderer.ReadFileAsByte("./templates/partials/footer.html")))
 
 	// Define our Routes
 	r.GET("/", routeHandlers.Home)

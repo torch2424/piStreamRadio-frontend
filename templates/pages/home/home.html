@@ -1,13 +1,19 @@
-<div class="entry">
-  hello testing!
-  <h1>{{title}}</h1>
-  <div class="body">
-    {{body}}
-    <div>
-      {{deep}}
-    </div>
-    <div>
-      {{deep.rolling}}
-    </div>
-  </div>
-</div>
+{{> head}}
+
+
+<h1>{{config.siteName}}</h1>
+
+<!-- Show a link to the sites youtube stream -->
+<amp-iframe width="560" height="315"
+  layout="responsive"
+  sandbox="allow-scripts allow-same-origin allow-popups"
+  allowfullscreen
+  frameborder="0"
+  src="https://www.youtube.com/embed/live_stream?channel={{config.channelId}}">
+  <amp-img layout="fill"
+    src="{{config.channelThumbnail}}"
+    placeholder>
+  </amp-img>
+</amp-iframe>
+
+{{> footer}}
