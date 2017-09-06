@@ -21,6 +21,10 @@ func main() {
 	// Define our Routes
 	r.GET("/", routeHandlers.Home)
 
+	// TODO: Handle Password Hashing
+	// bcrypt still great in 2017
+	// https://gowebexamples.com/password-hashing/
+
 	// TODO: Remove this example route
 	r.GET("/ping", func(c *gin.Context) {
 		c.JSON(200, gin.H{
