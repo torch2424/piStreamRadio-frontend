@@ -20,6 +20,7 @@ func main() {
 
 	// Define our Routes
 	r.GET("/", routeHandlers.Home)
+	r.GET("/playlist", routeHandlers.Playlist)
 
 	// TODO: Handle Password Hashing
 	// bcrypt still great in 2017
