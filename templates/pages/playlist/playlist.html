@@ -2,5 +2,19 @@
 
 
 <!-- Playlist Page HTML Here -->
+<h1>{{title}}</h1>
+
+<table class="playlist__table">
+  <tr>
+    <th>Artist</th>
+    <th>Title</th>
+  </tr>
+  {{#each songs}}
+  <tr>
+    <td>{{artist}}</td>
+    <td>{{title}}</td>
+  </tr>
+  {{/each}}
+</table>
 
 {{> footer}}

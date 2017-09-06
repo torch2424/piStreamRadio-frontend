@@ -1,7 +1,5 @@
 {
-  "title": "test",
-  "body": "ayyeee lmao",
-  "deep": {
-    "rolling": "in the deep"
-  }
+  "title": "piStreamRadio",
+  "subtitle": "24/7 Open Source Radio",
+  "description": "piStreamRadio, an open-source 24/7 live streaming raspberry pi."
 }

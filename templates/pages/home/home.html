@@ -1,10 +1,13 @@
 {{> head}}
 
 
-<h1>{{config.siteName}}</h1>
+<h1>{{title}}</h1>
+<h3>{{subtitle}}</h3>
 
 <!-- Show a link to the sites youtube stream -->
-<amp-iframe width="560" height="315"
+<amp-iframe class="home__embed"
+  width="560"
+  height="315"
   layout="responsive"
   sandbox="allow-scripts allow-same-origin allow-popups"
   allowfullscreen
@@ -15,5 +18,7 @@
     placeholder>
   </amp-img>
 </amp-iframe>
+
+<p>{{description}}</p>
 
 {{> footer}}
