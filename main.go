@@ -31,13 +31,6 @@ func main() {
 	// bcrypt still great in 2017
 	// https://gowebexamples.com/password-hashing/
 
-	// TODO: Remove this example route
-	r.GET("/ping", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"message": "pong",
-		})
-	})
-
 	// listen and serve on 0.0.0.0:8080
 	r.Run()
 }

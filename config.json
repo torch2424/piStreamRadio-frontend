@@ -2,6 +2,6 @@
   "siteName": "piStreamRadio",
   "channelId": "UCLkeIxbDJ8-kH7B9qJkyxQg",
   "channelThumbnail": "https://camo.githubusercontent.com/3b876bc94676c3ce04d90184ec497a5ae01e55a1/68747470733a2f2f66696c65732e6161726f6e7468656465762e636f6d2f242f7567626267",
-  "musicFilesPath": "../musicTestFiles",
+  "musicFilesPath": "../piStreamRadio/radioFiles/music",
   "favicon": "http://i.imgur.com/FeW5Q.png"
 }
