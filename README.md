@@ -1,6 +1,6 @@
 # piStreamRadio-frontend
 
-![piStreamRadio Frontent Screenshot](https://files.aaronthedev.com/$/5xdkp)
+![piStreamRadio Frontend Screenshot](https://files.aaronthedev.com/$/5xdkp)
 
 A frontend web client for piStreamRadio. Using [Gin](https://github.com/gin-gonic/gin), [AMP](https://github.com/ampproject/amphtml), and [MustacheJS with raymond](https://github.com/aymerick/raymond). Styling is done with [AMP Start](https://www.ampstart.com/) and [Animate.css](https://daneden.github.io/animate.css/).
 
